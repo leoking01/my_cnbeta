@@ -15,3 +15,4 @@ NEWSPIDER_MODULE = 'cnbeta.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'cnbeta (+http://www.yourdomain.com)'
+ITEM_PIPELINES=['cnbeta.pipelines.MySQLStorePipeline']

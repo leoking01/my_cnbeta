@@ -20,8 +20,12 @@ class CBSpider(CrawlSpider):
     def parse_page(self, response):
         item = CnbetaItem()
         sel = Selector(response)
-        item['title'] = sel.xpath('//title/text()').extract()[0]#.encode('utf-8')
+        item['title'] = sel.xpath('//title/text()').extract()[0]
         item['url'] = response.url
         print item['title'].encode('utf-8')
         print item['url']
         return item
+
+
+
+
