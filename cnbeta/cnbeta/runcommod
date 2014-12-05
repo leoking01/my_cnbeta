@@ -1,0 +1,1 @@
+scrapy crawl cnbeta -o result.json -t json
